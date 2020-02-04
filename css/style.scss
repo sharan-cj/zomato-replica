@@ -84,3 +84,74 @@ li {
     padding: .5em 1em;
     border-radius: .3em;
 }
+
+.zomato-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.zomato-logo img {
+    width: 6em;
+    
+}
+
+.zomato-logo h6 {
+    color: white;
+    font-size: 1.2rem;
+    margin: 1em 0;
+    font-family: poppins, sans-serif;
+}
+
+
+#dropdownMenuLink {
+    width: 7em;
+    background-color: #f5f2f2;
+    color: black;
+    margin: 0 1em;
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-res {
+    width: 25em;
+    padding: .2em;
+    padding-left: 1.5em;
+    border: 1px solid black;
+    border-radius: .2em;
+    margin-right: .7em;
+}
+
+.search-btn {
+    cursor: pointer;
+    width: 5em;
+    padding: .2em;
+    border: 1px solid black;
+    color: white;
+    background-color: #e23744;
+    border-radius: .2em;
+}
+
+@media (max-width: 600px){
+    .search-bar {
+        flex-direction: column;
+    }
+    .search-restaurant {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1em;
+        align-items: center;
+    }
+    #search-res {
+        max-width: 20em;
+    }
+
+    .search-btn {
+        margin-top: 1em;
+    }
+}

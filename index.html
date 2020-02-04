@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
 <body>
-    <!--Header container-->
+    <!-- Header -->
     <header class="header-container">
         <div class="get_app">
             <img src="images/get-the-app-plain.svg">
@@ -21,15 +22,38 @@
         </div>    
     </header>
 
-    <!--Banner Section-->
+    <!-- Banner -->
     <section class="banner">
         <div class="sign_up">
             <a id="log_in" href="#">Log In</a>
             <a id ="create_account"href="#">Create an account</a>
         </div>
-        <div class="search_restaurant">
-
+        <div class="zomato-logo">
+            <img src="images/zomato_flat_bg_logo.svg">
+            <h6>Find the best Restaurants, Cafes and Bars in Mumbai</h6>
+        </div>
+        <div class="search-bar">
+        <div class="dropdown show">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mumbai</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Bengaluru</a>
+              <a class="dropdown-item" href="#">Mysuru</a>
+              <a class="dropdown-item" href="#">Noida</a>
+            </div>
+          </div>
+        <div class="search-restaurant">
+            <input type="text" id="search-res" placeholder="Search for restaurants or cuisines...">
+            <button class="search-btn">Search</button>
+        </div>
         </div>
     </section>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
