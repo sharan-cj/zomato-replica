@@ -134,11 +134,15 @@ table {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif !important;
+  background-color: #f3f3f3 !important;
+  display: flex;
+  flex-direction: column;
 }
 
 a:link {
   text-decoration: none;
+  color: black;
 }
 
 li {
@@ -150,6 +154,8 @@ li {
   justify-content: space-between;
   align-items: center;
   margin: auto 1em;
+  font-weight: 500;
+  background-color: white;
 }
 
 .header-container img {
@@ -173,6 +179,7 @@ li {
 .nav li a {
   display: flex;
   align-items: center;
+  color: black;
 }
 
 .nav li a img {
@@ -189,8 +196,8 @@ li {
   }
 }
 .banner {
-  background-image: url(../images/bg.jpg);
-  height: 563px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/bg.jpg);
+  height: 420px;
   background-size: cover;
 }
 
@@ -281,6 +288,102 @@ li {
   .search-btn {
     margin-top: 1em;
   }
+}
+.widget {
+  display: flex;
+  flex-flow: column;
+  align-self: flex-end;
+  align-items: center;
+  float: right;
+  width: 30%;
+  text-align: center;
+  margin: 2em 0;
+  padding: 2%;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background: white;
+}
+
+.order-btn {
+  width: 90%;
+  margin: 1em 0;
+  border: 1px solid #069e44;
+  background: #069e44;
+  color: white;
+  padding: 2%;
+  border-radius: 5px;
+}
+
+#location {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 0;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.search-del {
+  width: 60%;
+  border: none;
+  margin: 2%;
+}
+
+.detect-btn {
+  width: 30%;
+  border: none;
+  margin-right: 2%;
+  background: none;
+}
+
+hr {
+  border: 0.5px solid black;
+  width: 100%;
+}
+
+.vl {
+  border: 1px solid black;
+  width: 1px;
+  margin: 1px;
+}
+
+.widget p {
+  color: #069e44;
+  font-weight: 500;
+}
+
+@media (max-width: 1200px) {
+  .widget {
+    width: 50%;
+  }
+}
+@media (max-width: 600px) {
+  .widget {
+    width: 100%;
+  }
+}
+.categories {
+  margin: 2em;
+}
+
+.categories ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-color: white;
+}
+
+.categories ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 8em;
+}
+
+.categories ul li img {
+  height: 4em;
 }
 
 /*# sourceMappingURL=style.css.map */
