@@ -20,7 +20,7 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: auto 1em;
+    padding: 0 1em;
     font-weight: 500;
     background-color: white;
 }
@@ -232,10 +232,16 @@ hr {
     .widget{
         width: 50%;
     }
+    .localities ul li {
+        width: 50%;
+    }
 }
 
 @media (max-width: 600px) {
     .widget{
+        width: 100%;
+    }
+    .localities ul li {
         width: 100%;
     }
 }
@@ -261,4 +267,78 @@ hr {
 
 .categories ul li img {
     height: 4em;
+}
+
+.localities {
+    margin: 2em;
+}
+
+.localities ul {
+    display: flex;
+    background-color: white;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1em;
+}
+
+.localities ul li {
+    width: 33%;
+}
+
+@media (max-width: 1200px){
+    .localities ul li {
+        width: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .localities ul {
+        flex-direction: column;
+    }
+    .localities ul li {
+        width: 100%;
+    }
+}
+
+footer {
+    background: #282b34;
+    color: #a5a5a5;
+}
+
+footer hr {
+    background: #a5a5a5;;
+}
+
+footer img {
+    height: 5em;
+    margin: 1em;
+}
+
+.footer-wrapper {
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.footer-wrapper div ul {
+    padding: 0 1em;
+}
+
+.countries {
+    padding: 2em;
+
+}
+
+.countries ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 1em;
+}
+
+.countries ul li {
+    width: 50%;
 }
