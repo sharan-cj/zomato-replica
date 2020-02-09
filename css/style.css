@@ -149,7 +149,7 @@ li {
   list-style-type: none;
 }
 
-.header-container {
+.h-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -158,7 +158,7 @@ li {
   background-color: white;
 }
 
-.header-container img {
+.h-container img {
   height: 1.5em;
 }
 
@@ -281,7 +281,7 @@ li {
     align-items: center;
   }
 
-  #search-res {
+  #search-rest {
     max-width: 20em;
   }
 
@@ -323,7 +323,7 @@ li {
   border-radius: 5px;
 }
 
-.search-del {
+#search-del {
   width: 60%;
   border: none;
   margin: 2%;
